@@ -1,0 +1,137 @@
+{
+  "config": {
+    "doc_len": 8,
+    "n_pairs": 60000,
+    "seed": 0,
+    "topk": 10,
+    "n_articles_requested": 2330
+  },
+  "sets": {
+    "msa": {
+      "n_articles": 2330,
+      "n_sentences": 18640,
+      "n_categories": 22,
+      "lexical": {
+        "random": 0.8005374488888889,
+        "category": 0.7925808283333333,
+        "lexical_topk": 0.6564792394444444
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9123329938888889,
+            "AUC_lexical": 0.8005374488888889,
+            "gap": 0.111795545
+          },
+          "category": {
+            "AUC_embedding": 0.8769507288888889,
+            "AUC_lexical": 0.7925808283333333,
+            "gap": 0.0843699005555556
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.7185227277777778,
+            "AUC_lexical": 0.6564792394444444,
+            "gap": 0.062043488333333396
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.8724658572222223,
+            "AUC_lexical": 0.8005374488888889,
+            "gap": 0.07192840833333336
+          },
+          "category": {
+            "AUC_embedding": 0.8542326727777778,
+            "AUC_lexical": 0.7925808283333333,
+            "gap": 0.06165184444444449
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.6243048933333334,
+            "AUC_lexical": 0.6564792394444444,
+            "gap": -0.03217434611111103
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9187608355555555,
+            "AUC_lexical": 0.8005374488888889,
+            "gap": 0.11822338666666665
+          },
+          "category": {
+            "AUC_embedding": 0.9011957827777778,
+            "AUC_lexical": 0.7925808283333333,
+            "gap": 0.10861495444444447
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.7158844883333333,
+            "AUC_lexical": 0.6564792394444444,
+            "gap": 0.05940524888888887
+          }
+        }
+      }
+    },
+    "english": {
+      "n_articles": 2330,
+      "n_sentences": 18640,
+      "n_categories": 62,
+      "lexical": {
+        "random": 0.7055044844444445,
+        "category": 0.6756814755555556,
+        "lexical_topk": 0.583756115
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9059242716666667,
+            "AUC_lexical": 0.7055044844444445,
+            "gap": 0.2004197872222222
+          },
+          "category": {
+            "AUC_embedding": 0.8579203838888889,
+            "AUC_lexical": 0.6756814755555556,
+            "gap": 0.18223890833333334
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.722398575,
+            "AUC_lexical": 0.583756115,
+            "gap": 0.13864246000000002
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9064885688888888,
+            "AUC_lexical": 0.7055044844444445,
+            "gap": 0.20098408444444438
+          },
+          "category": {
+            "AUC_embedding": 0.8473091427777778,
+            "AUC_lexical": 0.6756814755555556,
+            "gap": 0.17162766722222222
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.6702342294444444,
+            "AUC_lexical": 0.583756115,
+            "gap": 0.08647811444444442
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9283716888888889,
+            "AUC_lexical": 0.7055044844444445,
+            "gap": 0.2228672044444444
+          },
+          "category": {
+            "AUC_embedding": 0.8773501861111112,
+            "AUC_lexical": 0.6756814755555556,
+            "gap": 0.20166871055555557
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.7335948505555555,
+            "AUC_lexical": 0.583756115,
+            "gap": 0.1498387355555555
+          }
+        }
+      }
+    }
+  }
+}

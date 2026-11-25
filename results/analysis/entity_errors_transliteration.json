@@ -1,0 +1,103 @@
+{
+ "per_condition": {
+  "dialect": {
+   "entity": 4293,
+   "no_new_name": 2509,
+   "absent": 1095,
+   "variant": 689
+  },
+  "gold_ref": {
+   "entity": 196,
+   "no_new_name": 158,
+   "absent": 25,
+   "variant": 13
+  }
+ },
+ "examples": [
+  [
+   "Canada",
+   "Canadian",
+   0.86,
+   "ours-coh-2618",
+   "aya"
+  ],
+  [
+   "Canada",
+   "Canadian",
+   0.86,
+   "ours-coh-2618",
+   "aya"
+  ],
+  [
+   "Canada",
+   "Canadian",
+   0.86,
+   "ours-coh-2618",
+   "aya"
+  ],
+  [
+   "Canada",
+   "Canadian",
+   0.86,
+   "ours-coh-2618",
+   "aya"
+  ],
+  [
+   "Yoko",
+   "Yuko",
+   0.75,
+   "ours-coh-2660",
+   "aya"
+  ],
+  [
+   "Nation's",
+   "Nation",
+   0.86,
+   "ours-coh-2687",
+   "aya"
+  ],
+  [
+   "Najeeb",
+   "Naji",
+   0.6,
+   "ours-coh-2688",
+   "aya"
+  ],
+  [
+   "Najeeb",
+   "Naji",
+   0.6,
+   "ours-coh-2688",
+   "aya"
+  ],
+  [
+   "Najeeb",
+   "Naji",
+   0.6,
+   "ours-coh-2688",
+   "aya"
+  ],
+  [
+   "Najeeb",
+   "Naji",
+   0.6,
+   "ours-coh-2688",
+   "aya"
+  ],
+  [
+   "Najeeb",
+   "Naji",
+   0.6,
+   "ours-coh-2688",
+   "aya"
+  ],
+  [
+   "KWA",
+   "KAY",
+   0.67,
+   "ours-coh-2693",
+   "aya"
+  ]
+ ],
+ "threshold": 0.6
+}

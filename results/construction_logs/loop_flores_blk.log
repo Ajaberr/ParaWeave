@@ -1,0 +1,38 @@
+==== farsi fragments | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6 | clusters=80 fragments, articles>=3 fragments
+[farsi_blk] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Farsi (Iranian Persian)' rounds=6 dry=2 csize=80 pool=562
+[farsi_blk] round 1: 7 clusters, 0 candidates -> KEPT 0 rubric-coh>=4 (0 recycled) | total 0 | leftover 562
+[farsi_blk] DONE: 0 new rubric-verified articles over 1 rounds (0 in file) | coh {} -> loop_farsi_blk.gpt55-sonnet46.jsonl
+LLM usage (estimated at list prices):
+  anthropic          claude-sonnet-4-6                    calls=    2 in=     1152 out=      72 ~$0.00
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   136551 out=    5183 ~$0.84
+  total per provider: anthropic ~$0.00, openai ~$0.84
+LLM usage (estimated at list prices):
+  anthropic          claude-sonnet-4-6                    calls=    2 in=     1152 out=      72 ~$0.00
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   136551 out=    5183 ~$0.84
+  total per provider: anthropic ~$0.00, openai ~$0.84
+==== farsi exit 0 Thu Sep 17 17:51:55 EDT 2026
+==== dari fragments | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6 | clusters=80 fragments, articles>=3 fragments
+[dari_blk] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Dari (Afghan Persian)' rounds=6 dry=2 csize=80 pool=562
+[dari_blk] round 1: 7 clusters, 0 candidates -> KEPT 0 rubric-coh>=4 (0 recycled) | total 0 | leftover 562
+[dari_blk] DONE: 0 new rubric-verified articles over 1 rounds (0 in file) | coh {} -> loop_dari_blk.gpt55-sonnet46.jsonl
+LLM usage (estimated at list prices):
+  anthropic          claude-sonnet-4-6                    calls=    1 in=      548 out=      38 ~$0.00
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   133393 out=    3846 ~$0.78
+  total per provider: anthropic ~$0.00, openai ~$0.78
+LLM usage (estimated at list prices):
+  anthropic          claude-sonnet-4-6                    calls=    1 in=      548 out=      38 ~$0.00
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   133393 out=    3846 ~$0.78
+  total per provider: anthropic ~$0.00, openai ~$0.78
+==== dari exit 0 Thu Sep 17 17:52:21 EDT 2026
+==== tajik fragments | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6 | clusters=80 fragments, articles>=3 fragments
+[tajik_blk] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Tajik (Persian written in Cyrillic)' rounds=6 dry=2 csize=80 pool=562
+[tajik_blk] round 1: 7 clusters, 0 candidates -> KEPT 0 rubric-coh>=4 (0 recycled) | total 0 | leftover 562
+[tajik_blk] DONE: 0 new rubric-verified articles over 1 rounds (0 in file) | coh {} -> loop_tajik_blk.gpt55-sonnet46.jsonl
+LLM usage (estimated at list prices):
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   155822 out=    3068 ~$0.87
+  total per provider: openai ~$0.87
+LLM usage (estimated at list prices):
+  openai             openai.gpt-5.5-2026-04-23            calls=    7 in=   155822 out=    3068 ~$0.87
+  total per provider: openai ~$0.87
+==== tajik exit 0 Thu Sep 17 17:52:41 EDT 2026
+==== ALL DONE Thu Sep 17 17:52:41 EDT 2026

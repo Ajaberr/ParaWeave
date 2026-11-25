@@ -1,0 +1,247 @@
+{
+ "enone": {
+  "cells": {
+   "dialect|dialect": 0.6620451882845189,
+   "dialect|gold_reference": 0.3686598326359833,
+   "gold_ref|dialect": 0.5438970833333333,
+   "gold_ref|gold_reference": 0.87709
+  },
+  "ci_src_en": [
+   0.3365531380753138,
+   0.3978652719665272
+  ],
+  "noclaim": 1,
+  "words": 22.7375,
+  "gap": 0.5084301673640168,
+  "judge": 0.3331929166666667,
+  "n": {
+   "dialect|dialect": 239,
+   "dialect|gold_reference": 239,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.05018359853121175,
+   "number": 0.011627906976744186,
+   "relation": 0.037943696450428395,
+   "unsupported": 0.48592411260709917,
+   "contradiction": 0.019583843329253364,
+   "overgeneralization": 0.07527539779681762
+  },
+  "tokens": {
+   "calls": 187,
+   "in": 327.96791443850265,
+   "out": 33.95187165775401,
+   "usd_logged": 0.49712,
+   "usd_per_480": 1.2760299465240643
+  }
+ },
+ "elow": {
+  "cells": {
+   "dialect|dialect": 0.6648184100418411,
+   "dialect|gold_reference": 0.4322364016736402,
+   "gold_ref|dialect": 0.5805379166666667,
+   "gold_ref|gold_reference": 0.8892066666666667
+  },
+  "ci_src_en": [
+   0.3995640167364017,
+   0.4644234309623431
+  ],
+  "noclaim": 1,
+  "words": 23.441666666666666,
+  "gap": 0.4569702649930265,
+  "judge": 0.30866875000000005,
+  "n": {
+   "dialect|dialect": 239,
+   "dialect|gold_reference": 239,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.07457846952010376,
+   "number": 0.01556420233463035,
+   "relation": 0.04993514915693904,
+   "unsupported": 0.4072632944228275,
+   "contradiction": 0.020103761348897537,
+   "overgeneralization": 0.048638132295719845
+  },
+  "tokens": {
+   "calls": 350,
+   "in": 331.42571428571426,
+   "out": 240.9542857142857,
+   "usd_logged": 3.110015,
+   "usd_per_480": 4.265163428571428
+  }
+ },
+ "emedium": {
+  "cells": {
+   "dialect|dialect": 0.6932304166666666,
+   "dialect|gold_reference": 0.47825541666666666,
+   "gold_ref|dialect": 0.5474670833333334,
+   "gold_ref|gold_reference": 0.8962954166666667
+  },
+  "ci_src_en": [
+   0.44382458333333336,
+   0.5114783333333334
+  ],
+  "noclaim": 0,
+  "words": 24.320833333333333,
+  "gap": 0.41804,
+  "judge": 0.3488283333333333,
+  "n": {
+   "dialect|dialect": 240,
+   "dialect|gold_reference": 240,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.034634760705289674,
+   "number": 0.012594458438287154,
+   "relation": 0.06486146095717885,
+   "unsupported": 0.3992443324937028,
+   "contradiction": 0.01700251889168766,
+   "overgeneralization": 0.06738035264483627
+  },
+  "tokens": {
+   "calls": 393,
+   "in": 335.48600508905855,
+   "out": 515.3435114503817,
+   "usd_logged": 6.73513,
+   "usd_per_480": 8.226112977099236
+  }
+ },
+ "ehigh": {
+  "cells": {
+   "dialect|dialect": 0.67451125,
+   "dialect|gold_reference": 0.48100125,
+   "gold_ref|dialect": 0.5593541666666667,
+   "gold_ref|gold_reference": 0.88070875
+  },
+  "ci_src_en": [
+   0.44596,
+   0.5138183333333334
+  ],
+  "noclaim": 0,
+  "words": 24.495833333333334,
+  "gap": 0.39970750000000005,
+  "judge": 0.32135458333333333,
+  "n": {
+   "dialect|dialect": 240,
+   "dialect|gold_reference": 240,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.0607008760951189,
+   "number": 0.012515644555694618,
+   "relation": 0.07196495619524405,
+   "unsupported": 0.3523153942428035,
+   "contradiction": 0.015644555694618274,
+   "overgeneralization": 0.05006257822277847
+  },
+  "tokens": {
+   "calls": 412,
+   "in": 335.97087378640776,
+   "out": 751.1529126213592,
+   "usd_logged": 9.97635,
+   "usd_per_480": 11.622932038834952
+  }
+ },
+ "exhigh": {
+  "cells": {
+   "dialect|dialect": 0.6730308333333334,
+   "dialect|gold_reference": 0.4929875,
+   "gold_ref|dialect": 0.556695,
+   "gold_ref|gold_reference": 0.9051325
+  },
+  "ci_src_en": [
+   0.45825916666666666,
+   0.52737
+  ],
+  "noclaim": 0,
+  "words": 24.3875,
+  "gap": 0.412145,
+  "judge": 0.34843749999999996,
+  "n": {
+   "dialect|dialect": 240,
+   "dialect|gold_reference": 240,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.054735547355473556,
+   "number": 0.01107011070110701,
+   "relation": 0.05412054120541206,
+   "unsupported": 0.34809348093480935,
+   "contradiction": 0.02214022140221402,
+   "overgeneralization": 0.06519065190651907
+  },
+  "tokens": {
+   "calls": 429,
+   "in": 337.9324009324009,
+   "out": 1350.107226107226,
+   "usd_logged": 18.100745,
+   "usd_per_480": 20.252581818181817
+  }
+ },
+ "low 09-21": {
+  "cells": {
+   "dialect|dialect": 0.7078558333333334,
+   "dialect|gold_reference": 0.43724999999999997,
+   "gold_ref|dialect": 0.5818454166666667,
+   "gold_ref|gold_reference": 0.8920195833333333
+  },
+  "ci_src_en": [
+   0.4041329166666667,
+   0.470195
+  ],
+  "noclaim": 0,
+  "words": 23.854166666666668,
+  "gap": 0.45476958333333334,
+  "judge": 0.31017416666666664,
+  "n": {
+   "dialect|dialect": 240,
+   "dialect|gold_reference": 240,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.042420461634435434,
+   "number": 0.012476606363069246,
+   "relation": 0.06363069245165315,
+   "unsupported": 0.4086088583905178,
+   "contradiction": 0.018091079226450407,
+   "overgeneralization": 0.06737367436057393
+  }
+ },
+ "GPT-5.5 low": {
+  "cells": {
+   "dialect|dialect": 0.7348458333333333,
+   "dialect|gold_reference": 0.47137125,
+   "gold_ref|dialect": 0.5894254166666667,
+   "gold_ref|gold_reference": 0.8972095833333333
+  },
+  "ci_src_en": [
+   0.4322325,
+   0.50773375
+  ],
+  "noclaim": 0,
+  "words": 21.383333333333333,
+  "gap": 0.4258383333333333,
+  "judge": 0.30778416666666664,
+  "n": {
+   "dialect|dialect": 240,
+   "dialect|gold_reference": 240,
+   "gold_ref|dialect": 240,
+   "gold_ref|gold_reference": 240
+  },
+  "tags_per_claim": {
+   "entity": 0.05571227080394922,
+   "number": 0.009873060648801129,
+   "relation": 0.045839210155148094,
+   "unsupported": 0.421015514809591,
+   "contradiction": 0.013399153737658674,
+   "overgeneralization": 0.05148095909732017
+  }
+ }
+}

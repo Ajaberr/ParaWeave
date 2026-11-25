@@ -1,0 +1,13 @@
+==== lugbara long12 | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6@anthropic | clusters=300 min_pairs=12 min_sents=12 rounds=12 | caps openai=60 anthropic=10
+[lugbara] RESUME: 114 articles already in loop_lugbara_long12.gpt55-sonnet46.jsonl (1747 sentences retired)
+[lugbara] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Lugbara (a Central Sudanic language of Uganda and DR Congo)' rounds=12 dry=5 csize=300 pool=24946
+[lugbara] round 1: 77 clusters, 17 candidates -> KEPT 17 rubric-coh>=4 (0 recycled) | total 17 | leftover 22978
+[lugbara] round 2: 76 clusters, 16 candidates -> KEPT 14 rubric-coh>=4 (2 recycled) | total 31 | leftover 22775
+[lugbara] round 3: 75 clusters, 22 candidates -> KEPT 21 rubric-coh>=4 (1 recycled) | total 52 | leftover 22472
+[lugbara] round 4: 74 clusters, 17 candidates -> KEPT 17 rubric-coh>=4 (0 recycled) | total 69 | leftover 22226
+[lugbara] round 5: 74 clusters, 10 candidates -> KEPT 10 rubric-coh>=4 (0 recycled) | total 79 | leftover 22087
+[lugbara] round 6: 73 clusters, 10 candidates -> KEPT 10 rubric-coh>=4 (0 recycled) | total 89 | leftover 21944
+[lugbara] round 7: 73 clusters, 7 candidates -> KEPT 7 rubric-coh>=4 (0 recycled) | total 96 | leftover 21841
+[lugbara] round 8: 72 clusters, 10 candidates -> KEPT 10 rubric-coh>=4 (0 recycled) | total 106 | leftover 21705
+[lugbara] round 9: 72 clusters, 11 candidates -> KEPT 11 rubric-coh>=4 (0 recycled) | total 117 | leftover 21546
+[lugbara] round 10: 71 clusters, 9 candidates -> KEPT 9 rubric-coh>=4 (0 recycled) | total 126 | leftover 21414

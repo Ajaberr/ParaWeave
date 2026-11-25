@@ -1,0 +1,79 @@
+{
+ "annotators": {
+  "egyptian": 2,
+  "gulf": 1,
+  "levantine": 2,
+  "maghrebi": 2
+ },
+ "task1_odd_one_out": "every annotator identified the intruder in all 8 items",
+ "task3_mean_ratings_1to4": {
+  "coherence": {
+   "natural_news": 3.93,
+   "accepted": 3.07,
+   "rejected": 2.11,
+   "shuffled": 2.04
+  },
+  "human_written": {
+   "natural_news": 3.75,
+   "accepted": 2.57,
+   "rejected": 2.25,
+   "shuffled": 2.18
+  }
+ },
+ "task3_low_rating_reasons": {
+  "note": "ratings of 1 or 2; several reasons allowed; 28 ratings per condition",
+  "natural_news": {
+   "rated_1_2": 0
+  },
+  "accepted": {
+   "rated_1_2": 9,
+   "broken_order": 9,
+   "shared_setting_only": 3,
+   "topic_scatter": 1,
+   "contradictory": 3
+  },
+  "rejected": {
+   "rated_1_2": 21,
+   "broken_order": 18,
+   "shared_setting_only": 13,
+   "topic_scatter": 4,
+   "contradictory": 4
+  },
+  "shuffled": {
+   "rated_1_2": 22,
+   "broken_order": 20,
+   "shared_setting_only": 9,
+   "topic_scatter": 3,
+   "contradictory": 7
+  }
+ },
+ "gate_vs_annotators": {
+  "articles": 32,
+  "agreement": 0.8125,
+  "cohen_kappa": 0.625,
+  "annotator_pairs_kappa": 0.1273
+ },
+ "task4_claims_judge_vs_annotators": {
+  "claims": 116,
+  "fully_supported_split": {
+   "agreement": 0.6983,
+   "cohen_kappa": 0.4019
+  },
+  "supported_or_partial_split": {
+   "agreement": 0.7845,
+   "cohen_kappa": 0.3963
+  },
+  "annotator_pairs": {
+   "claims": 51,
+   "fully_supported_split": {
+    "agreement": 0.7255,
+    "cohen_kappa": 0.4482
+   },
+   "supported_or_partial_split": {
+    "agreement": 0.8431,
+    "cohen_kappa": 0.5036
+   }
+  },
+  "sampling": "claims were drawn from those on which the judge's verdicts against the Arabic and English articles agree"
+ }
+}

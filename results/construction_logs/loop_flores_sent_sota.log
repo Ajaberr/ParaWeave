@@ -1,0 +1,6 @@
+==== farsi sentences | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6 | clusters=150 sentences, articles>=4
+[farsi] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Farsi (Iranian Persian)' rounds=6 dry=2 csize=150 pool=2009
+[farsi] round 1: 13 clusters, 85 candidates -> KEPT 85 rubric-coh>=4 (0 recycled) | total 85 | leftover 1647
+==== farsi exit 127 Thu Sep 17 18:15:04 EDT 2026
+==== dari sentences | composer=openai.gpt-5.5-2026-04-23 judge=claude-sonnet-4-6 | clusters=150 sentences, articles>=4
+[dari] proposer=openai:openai.gpt-5.5-2026-04-23 judge=claude:claude-sonnet-4-6 src_lang='Dari (Afghan Persian)' rounds=6 dry=2 csize=150 pool=2009

@@ -1,0 +1,79 @@
+{
+ "n_ratings": 56,
+ "n_annotators": 7,
+ "n_articles": 32,
+ "n_accepted_articles": 16,
+ "n_rejected_articles": 16,
+ "gate_vs_rating": {
+  "agreement": 0.7143,
+  "kappa": 0.4286,
+  "ac1": 0.4293,
+  "alpha": 0.433,
+  "p_faithful_rater_a": 0.5,
+  "p_faithful_rater_b": 0.4643,
+  "n_units": 56.0,
+  "confusion_gate_rows_human_cols": [
+   [
+    19,
+    9
+   ],
+   [
+    7,
+    21
+   ]
+  ]
+ },
+ "auc_rating_separates_accept_reject": 0.7774,
+ "per_annotator": {
+  "egyptian-1": {
+   "agreement": 0.75,
+   "kappa": 0.5,
+   "n": 8
+  },
+  "egyptian-2": {
+   "agreement": 0.75,
+   "kappa": 0.5,
+   "n": 8
+  },
+  "gulf-1": {
+   "agreement": 0.75,
+   "kappa": 0.5,
+   "n": 8
+  },
+  "levantine-1": {
+   "agreement": 0.75,
+   "kappa": 0.5,
+   "n": 8
+  },
+  "levantine-2": {
+   "agreement": 0.625,
+   "kappa": 0.25,
+   "n": 8
+  },
+  "maghrebi-1": {
+   "agreement": 0.875,
+   "kappa": 0.75,
+   "n": 8
+  },
+  "maghrebi-2": {
+   "agreement": 0.5,
+   "kappa": 0.0,
+   "n": 8
+  }
+ },
+ "human_vs_human_same_articles": {
+  "agreement": 0.5,
+  "kappa": 0.1273,
+  "n_article_pairs": 24
+ },
+ "gate_vs_article_mean_ge_2.5": {
+  "agreement": 0.8125,
+  "kappa": 0.625,
+  "n_articles": 32
+ },
+ "gate_vs_article_mean_ge_3.0": {
+  "agreement": 0.8125,
+  "kappa": 0.625,
+  "n_articles": 32
+ }
+}

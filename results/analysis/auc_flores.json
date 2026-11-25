@@ -1,0 +1,1128 @@
+{
+  "config": {
+    "topk": 10,
+    "tfidf": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "sublinear_tf": true
+    },
+    "arms": {
+      "none": null,
+      "topic": "Instruct: Identify the topic or theme of the given text\nQuery: ",
+      "scene": "Instruct: Group sentences that belong to the same conversation, scene, or connected event.\nQuery: "
+    },
+    "n_sentences": 2009,
+    "n_fragments": 562,
+    "fragment_sizes": {
+      "1": 1,
+      "2": 102,
+      "3": 184,
+      "4": 135,
+      "5": 132,
+      "6": 7,
+      "10": 1
+    },
+    "n_topics": 283,
+    "n_pos": 2934,
+    "model": "Qwen/Qwen3-Embedding-8B",
+    "dtype": "float16"
+  },
+  "langs": {
+    "eng_Latn": {
+      "name": "English",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 64767,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8420031981966186,
+        "topic": 0.8172616445352302,
+        "lexical_topk": 0.7278635600790118,
+        "lexical_topk_en": 0.7278635600790118
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9756432589787595,
+            "AUC_lexical": 0.8420031981966186,
+            "gap": 0.13364006078214086
+          },
+          "topic": {
+            "AUC_embedding": 0.9330107560725494,
+            "AUC_lexical": 0.8172616445352302,
+            "gap": 0.11574911153731915
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.9239324868887413,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.19606892680972954
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9239324868887413,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.19606892680972954
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9824677356232506,
+            "AUC_lexical": 0.8420031981966186,
+            "gap": 0.140464537426632
+          },
+          "topic": {
+            "AUC_embedding": 0.912622657516478,
+            "AUC_lexical": 0.8172616445352302,
+            "gap": 0.09536101298124777
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.9289739054017017,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.2011103453226899
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9289739054017017,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.2011103453226899
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9854551180789894,
+            "AUC_lexical": 0.8420031981966186,
+            "gap": 0.14345191988237083
+          },
+          "topic": {
+            "AUC_embedding": 0.9513164369012947,
+            "AUC_lexical": 0.8172616445352302,
+            "gap": 0.13405479236606455
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.9432425376228557,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.21537897754384394
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9432425376228557,
+            "AUC_lexical": 0.7278635600790118,
+            "gap": 0.21537897754384394
+          }
+        }
+      }
+    },
+    "pes_Arab": {
+      "name": "Persian",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59623,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8279084339918418,
+        "topic": 0.7935084424408434,
+        "lexical_topk": 0.7005949253444224,
+        "lexical_topk_en": 0.7511666196153042
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9384719391626899,
+            "AUC_lexical": 0.8279084339918418,
+            "gap": 0.11056350517084812
+          },
+          "topic": {
+            "AUC_embedding": 0.8727992392938346,
+            "AUC_lexical": 0.7935084424408434,
+            "gap": 0.07929079685299123
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8433744470382244,
+            "AUC_lexical": 0.7005949253444224,
+            "gap": 0.14277952169380204
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8618000996682682,
+            "AUC_lexical": 0.7511666196153042,
+            "gap": 0.11063348005296403
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9349981063006676,
+            "AUC_lexical": 0.8279084339918418,
+            "gap": 0.10708967230882582
+          },
+          "topic": {
+            "AUC_embedding": 0.8210281901734613,
+            "AUC_lexical": 0.7935084424408434,
+            "gap": 0.027519747732617894
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8261354595675182,
+            "AUC_lexical": 0.7005949253444224,
+            "gap": 0.12554053422309586
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8482111520327983,
+            "AUC_lexical": 0.7511666196153042,
+            "gap": 0.09704453241749411
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9524389141400522,
+            "AUC_lexical": 0.8279084339918418,
+            "gap": 0.12453048014821044
+          },
+          "topic": {
+            "AUC_embedding": 0.8877369963733821,
+            "AUC_lexical": 0.7935084424408434,
+            "gap": 0.0942285539325387
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8660562594729362,
+            "AUC_lexical": 0.7005949253444224,
+            "gap": 0.16546133412851383
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.883147814878627,
+            "AUC_lexical": 0.7511666196153042,
+            "gap": 0.13198119526332286
+          }
+        }
+      }
+    },
+    "prs_Arab": {
+      "name": "Dari",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59618,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8479724322357928,
+        "topic": 0.8151651113155524,
+        "lexical_topk": 0.7287885163809222,
+        "lexical_topk_en": 0.7769302059738253
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9349669189091682,
+            "AUC_lexical": 0.8479724322357928,
+            "gap": 0.08699448667337539
+          },
+          "topic": {
+            "AUC_embedding": 0.8693799694185187,
+            "AUC_lexical": 0.8151651113155524,
+            "gap": 0.054214858102966335
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8410064012865551,
+            "AUC_lexical": 0.7287885163809222,
+            "gap": 0.11221788490563289
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.857466856522414,
+            "AUC_lexical": 0.7769302059738253,
+            "gap": 0.0805366505485886
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9294079557345181,
+            "AUC_lexical": 0.8479724322357928,
+            "gap": 0.08143552349872529
+          },
+          "topic": {
+            "AUC_embedding": 0.8209768969864555,
+            "AUC_lexical": 0.8151651113155524,
+            "gap": 0.005811785670903125
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8237549572313417,
+            "AUC_lexical": 0.7287885163809222,
+            "gap": 0.0949664408504195
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8396337375856314,
+            "AUC_lexical": 0.7769302059738253,
+            "gap": 0.06270353161180608
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9482295676572354,
+            "AUC_lexical": 0.8479724322357928,
+            "gap": 0.10025713542144266
+          },
+          "topic": {
+            "AUC_embedding": 0.8839433555350344,
+            "AUC_lexical": 0.8151651113155524,
+            "gap": 0.06877824421948209
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8612938640496506,
+            "AUC_lexical": 0.7287885163809222,
+            "gap": 0.13250534766872835
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8763408888422848,
+            "AUC_lexical": 0.7769302059738253,
+            "gap": 0.09941068286845944
+          }
+        }
+      }
+    },
+    "tgk_Cyrl": {
+      "name": "Tajik",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 64299,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8163653071964628,
+        "topic": 0.7814863454629352,
+        "lexical_topk": 0.6876422324965209,
+        "lexical_topk_en": 0.7347774475815142
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9236781112138367,
+            "AUC_lexical": 0.8163653071964628,
+            "gap": 0.10731280401737386
+          },
+          "topic": {
+            "AUC_embedding": 0.8565206933214133,
+            "AUC_lexical": 0.7814863454629352,
+            "gap": 0.07503434785847818
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8278374173495624,
+            "AUC_lexical": 0.6876422324965209,
+            "gap": 0.1401951848530415
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.841008023107192,
+            "AUC_lexical": 0.7347774475815142,
+            "gap": 0.10623057552567783
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9193949207999427,
+            "AUC_lexical": 0.8163653071964628,
+            "gap": 0.10302961360347984
+          },
+          "topic": {
+            "AUC_embedding": 0.8054849732811489,
+            "AUC_lexical": 0.7814863454629352,
+            "gap": 0.023998627818213714
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8094899984397832,
+            "AUC_lexical": 0.6876422324965209,
+            "gap": 0.1218477659432623
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8285653768552069,
+            "AUC_lexical": 0.7347774475815142,
+            "gap": 0.09378792927369273
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9429056773011153,
+            "AUC_lexical": 0.8163653071964628,
+            "gap": 0.12654037010465247
+          },
+          "topic": {
+            "AUC_embedding": 0.8777093996954942,
+            "AUC_lexical": 0.7814863454629352,
+            "gap": 0.09622305423255906
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8562048827715498,
+            "AUC_lexical": 0.6876422324965209,
+            "gap": 0.16856265027502892
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8695495106474113,
+            "AUC_lexical": 0.7347774475815142,
+            "gap": 0.13477206306589706
+          }
+        }
+      }
+    },
+    "arb_Arab": {
+      "name": "MSA",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59503,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8175699854707552,
+        "topic": 0.7866706727136609,
+        "lexical_topk": 0.6973995262117869,
+        "lexical_topk_en": 0.7492669254581067
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9627648569398656,
+            "AUC_lexical": 0.8175699854707552,
+            "gap": 0.14519487146911036
+          },
+          "topic": {
+            "AUC_embedding": 0.9075857512550901,
+            "AUC_lexical": 0.7866706727136609,
+            "gap": 0.12091507854142924
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8891391984830126,
+            "AUC_lexical": 0.6973995262117869,
+            "gap": 0.19173967227122568
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8995893401704473,
+            "AUC_lexical": 0.7492669254581067,
+            "gap": 0.15032241471234065
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9559182571446062,
+            "AUC_lexical": 0.8175699854707552,
+            "gap": 0.138348271673851
+          },
+          "topic": {
+            "AUC_embedding": 0.8539102512644267,
+            "AUC_lexical": 0.7866706727136609,
+            "gap": 0.06723957855076579
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8595164546417043,
+            "AUC_lexical": 0.6973995262117869,
+            "gap": 0.16211692842991743
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8761446818714821,
+            "AUC_lexical": 0.7492669254581067,
+            "gap": 0.1268777564133754
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9672807310872578,
+            "AUC_lexical": 0.8175699854707552,
+            "gap": 0.14971074561650255
+          },
+          "topic": {
+            "AUC_embedding": 0.9129206806545276,
+            "AUC_lexical": 0.7866706727136609,
+            "gap": 0.12625000794086672
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8976759215717112,
+            "AUC_lexical": 0.6973995262117869,
+            "gap": 0.20027639535992425
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9073542595228542,
+            "AUC_lexical": 0.7492669254581067,
+            "gap": 0.1580873340647475
+          }
+        }
+      }
+    },
+    "arz_Arab": {
+      "name": "Egyptian",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 58152,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8111212401682932,
+        "topic": 0.7785500631707987,
+        "lexical_topk": 0.688991032878788,
+        "lexical_topk_en": 0.7425435430864235
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9571305127850276,
+            "AUC_lexical": 0.8111212401682932,
+            "gap": 0.14600927261673435
+          },
+          "topic": {
+            "AUC_embedding": 0.9012525105170766,
+            "AUC_lexical": 0.7785500631707987,
+            "gap": 0.12270244734627789
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8717531321202935,
+            "AUC_lexical": 0.688991032878788,
+            "gap": 0.18276209924150544
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8884284738616657,
+            "AUC_lexical": 0.7425435430864235,
+            "gap": 0.14588493077524223
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9471539682559893,
+            "AUC_lexical": 0.8111212401682932,
+            "gap": 0.13603272808769606
+          },
+          "topic": {
+            "AUC_embedding": 0.8378555703592564,
+            "AUC_lexical": 0.7785500631707987,
+            "gap": 0.05930550718845773
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8398966895444447,
+            "AUC_lexical": 0.688991032878788,
+            "gap": 0.1509056566656567
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8623095052624746,
+            "AUC_lexical": 0.7425435430864235,
+            "gap": 0.11976596217605118
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9612141347256878,
+            "AUC_lexical": 0.8111212401682932,
+            "gap": 0.1500928945573946
+          },
+          "topic": {
+            "AUC_embedding": 0.901380079339366,
+            "AUC_lexical": 0.7785500631707987,
+            "gap": 0.12283001616856737
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8812805841176118,
+            "AUC_lexical": 0.688991032878788,
+            "gap": 0.19228955123882374
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.896617026505657,
+            "AUC_lexical": 0.7425435430864235,
+            "gap": 0.15407348341923355
+          }
+        }
+      }
+    },
+    "apc_Arab": {
+      "name": "North Levantine",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59819,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8160678854013845,
+        "topic": 0.7853718741619979,
+        "lexical_topk": 0.6932074733102209,
+        "lexical_topk_en": 0.7439377600513967
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9580439542666053,
+            "AUC_lexical": 0.8160678854013845,
+            "gap": 0.14197606886522074
+          },
+          "topic": {
+            "AUC_embedding": 0.899180738363935,
+            "AUC_lexical": 0.7853718741619979,
+            "gap": 0.11380886420193703
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8761726510510752,
+            "AUC_lexical": 0.6932074733102209,
+            "gap": 0.1829651777408543
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.88964912544931,
+            "AUC_lexical": 0.7439377600513967,
+            "gap": 0.1457113653979133
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9483272661403774,
+            "AUC_lexical": 0.8160678854013845,
+            "gap": 0.1322593807389929
+          },
+          "topic": {
+            "AUC_embedding": 0.8349648686426624,
+            "AUC_lexical": 0.7853718741619979,
+            "gap": 0.049592994480664454
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8460358111887927,
+            "AUC_lexical": 0.6932074733102209,
+            "gap": 0.15282833787857175
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8635615972220446,
+            "AUC_lexical": 0.7439377600513967,
+            "gap": 0.11962383717064795
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9652061269296259,
+            "AUC_lexical": 0.8160678854013845,
+            "gap": 0.1491382415282414
+          },
+          "topic": {
+            "AUC_embedding": 0.907302772450178,
+            "AUC_lexical": 0.7853718741619979,
+            "gap": 0.12193089828818005
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8894717480669048,
+            "AUC_lexical": 0.6932074733102209,
+            "gap": 0.19626427475668384
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9013267673817369,
+            "AUC_lexical": 0.7439377600513967,
+            "gap": 0.15738900733034022
+          }
+        }
+      }
+    },
+    "ajp_Arab": {
+      "name": "South Levantine",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 60396,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8237864278752385,
+        "topic": 0.7926796084507763,
+        "lexical_topk": 0.7037520045500198,
+        "lexical_topk_en": 0.7528999737078607
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9584804691066711,
+            "AUC_lexical": 0.8237864278752385,
+            "gap": 0.13469404123143258
+          },
+          "topic": {
+            "AUC_embedding": 0.9005158868350438,
+            "AUC_lexical": 0.7926796084507763,
+            "gap": 0.10783627838426746
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8816579463295037,
+            "AUC_lexical": 0.7037520045500198,
+            "gap": 0.17790594177948382
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.890876799746191,
+            "AUC_lexical": 0.7528999737078607,
+            "gap": 0.1379768260383304
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9485799917555684,
+            "AUC_lexical": 0.8237864278752385,
+            "gap": 0.12479356388032992
+          },
+          "topic": {
+            "AUC_embedding": 0.8403260991555346,
+            "AUC_lexical": 0.7926796084507763,
+            "gap": 0.04764649070475824
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8508458184164474,
+            "AUC_lexical": 0.7037520045500198,
+            "gap": 0.1470938138664275
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8653598423056824,
+            "AUC_lexical": 0.7528999737078607,
+            "gap": 0.11245986859782175
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9644913035670152,
+            "AUC_lexical": 0.8237864278752385,
+            "gap": 0.1407048756917767
+          },
+          "topic": {
+            "AUC_embedding": 0.9057646602358158,
+            "AUC_lexical": 0.7926796084507763,
+            "gap": 0.11308505178503947
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8920982343616882,
+            "AUC_lexical": 0.7037520045500198,
+            "gap": 0.18834622981166838
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9004410377174057,
+            "AUC_lexical": 0.7528999737078607,
+            "gap": 0.14754106400954503
+          }
+        }
+      }
+    },
+    "ars_Arab": {
+      "name": "Najdi",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59749,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8180397902934466,
+        "topic": 0.7874260175908007,
+        "lexical_topk": 0.6982481520084993,
+        "lexical_topk_en": 0.7498710942119836
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9624002864222906,
+            "AUC_lexical": 0.8180397902934466,
+            "gap": 0.14436049612884394
+          },
+          "topic": {
+            "AUC_embedding": 0.9077071743277262,
+            "AUC_lexical": 0.7874260175908007,
+            "gap": 0.12028115673692552
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8890904991630347,
+            "AUC_lexical": 0.6982481520084993,
+            "gap": 0.1908423471545354
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8987811681597173,
+            "AUC_lexical": 0.7498710942119836,
+            "gap": 0.1489100739477337
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9544269109192746,
+            "AUC_lexical": 0.8180397902934466,
+            "gap": 0.13638712062582792
+          },
+          "topic": {
+            "AUC_embedding": 0.853588333336221,
+            "AUC_lexical": 0.7874260175908007,
+            "gap": 0.06616231574542031
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8589168488449345,
+            "AUC_lexical": 0.6982481520084993,
+            "gap": 0.16066869683643514
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8747531250635109,
+            "AUC_lexical": 0.7498710942119836,
+            "gap": 0.12488203085152727
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9665879468563816,
+            "AUC_lexical": 0.8180397902934466,
+            "gap": 0.14854815656293496
+          },
+          "topic": {
+            "AUC_embedding": 0.9122469245744707,
+            "AUC_lexical": 0.7874260175908007,
+            "gap": 0.12482090698366999
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8971805399554735,
+            "AUC_lexical": 0.6982481520084993,
+            "gap": 0.1989323879469742
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9059479547623647,
+            "AUC_lexical": 0.7498710942119836,
+            "gap": 0.15607686055038106
+          }
+        }
+      }
+    },
+    "acm_Arab": {
+      "name": "Mesopotamian",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 58637,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8329156468795104,
+        "topic": 0.8007107797700209,
+        "lexical_topk": 0.711710876429786,
+        "lexical_topk_en": 0.7639485977046828
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9636488368468936,
+            "AUC_lexical": 0.8329156468795104,
+            "gap": 0.13073318996738326
+          },
+          "topic": {
+            "AUC_embedding": 0.9088946756151092,
+            "AUC_lexical": 0.8007107797700209,
+            "gap": 0.10818389584508825
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8858211223166985,
+            "AUC_lexical": 0.711710876429786,
+            "gap": 0.17411024588691248
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9001787899151559,
+            "AUC_lexical": 0.7639485977046828,
+            "gap": 0.13623019221047306
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9512825866620864,
+            "AUC_lexical": 0.8329156468795104,
+            "gap": 0.11836693978257606
+          },
+          "topic": {
+            "AUC_embedding": 0.8449089707154307,
+            "AUC_lexical": 0.8007107797700209,
+            "gap": 0.04419819094540978
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8494272770789849,
+            "AUC_lexical": 0.711710876429786,
+            "gap": 0.13771640064919888
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8706903417377139,
+            "AUC_lexical": 0.7639485977046828,
+            "gap": 0.10674174403303105
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9663158521886581,
+            "AUC_lexical": 0.8329156468795104,
+            "gap": 0.13340020530914776
+          },
+          "topic": {
+            "AUC_embedding": 0.9125916688852967,
+            "AUC_lexical": 0.8007107797700209,
+            "gap": 0.11188088911527583
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8940323326960316,
+            "AUC_lexical": 0.711710876429786,
+            "gap": 0.18232145626624552
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9066768772491154,
+            "AUC_lexical": 0.7639485977046828,
+            "gap": 0.14272827954443257
+          }
+        }
+      }
+    },
+    "acq_Arab": {
+      "name": "Ta'izzi-Adeni",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 59465,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8203795716363025,
+        "topic": 0.7901189724730092,
+        "lexical_topk": 0.6990351080364332,
+        "lexical_topk_en": 0.7517561535588496
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9615427281745614,
+            "AUC_lexical": 0.8203795716363025,
+            "gap": 0.14116315653825895
+          },
+          "topic": {
+            "AUC_embedding": 0.9057767303533811,
+            "AUC_lexical": 0.7901189724730092,
+            "gap": 0.11565775788037191
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8844910718620262,
+            "AUC_lexical": 0.6990351080364332,
+            "gap": 0.18545596382559304
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8970275721405373,
+            "AUC_lexical": 0.7517561535588496,
+            "gap": 0.14527141858168768
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9527958247954681,
+            "AUC_lexical": 0.8203795716363025,
+            "gap": 0.1324162531591656
+          },
+          "topic": {
+            "AUC_embedding": 0.8489956632279344,
+            "AUC_lexical": 0.7901189724730092,
+            "gap": 0.05887669075492519
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8525890078374939,
+            "AUC_lexical": 0.6990351080364332,
+            "gap": 0.1535538998010607
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8721543805881519,
+            "AUC_lexical": 0.7517561535588496,
+            "gap": 0.12039822702930225
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9656816191555496,
+            "AUC_lexical": 0.8203795716363025,
+            "gap": 0.14530204751924714
+          },
+          "topic": {
+            "AUC_embedding": 0.9118781795952641,
+            "AUC_lexical": 0.7901189724730092,
+            "gap": 0.12175920712225485
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8935993722943463,
+            "AUC_lexical": 0.6990351080364332,
+            "gap": 0.19456426425791307
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.9047693578625173,
+            "AUC_lexical": 0.7517561535588496,
+            "gap": 0.15301320430366772
+          }
+        }
+      }
+    },
+    "ary_Arab": {
+      "name": "Moroccan",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 60185,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.7924915685858926,
+        "topic": 0.7622904501499332,
+        "lexical_topk": 0.667709585401839,
+        "lexical_topk_en": 0.7251350388839175
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9332294378668659,
+            "AUC_lexical": 0.7924915685858926,
+            "gap": 0.1407378692809732
+          },
+          "topic": {
+            "AUC_embedding": 0.8632895315119584,
+            "AUC_lexical": 0.7622904501499332,
+            "gap": 0.10099908136202518
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.842323971662244,
+            "AUC_lexical": 0.667709585401839,
+            "gap": 0.17461438626040504
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8567301798490313,
+            "AUC_lexical": 0.7251350388839175,
+            "gap": 0.13159514096511382
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9293509304171678,
+            "AUC_lexical": 0.7924915685858926,
+            "gap": 0.13685936183127512
+          },
+          "topic": {
+            "AUC_embedding": 0.809499995861124,
+            "AUC_lexical": 0.7622904501499332,
+            "gap": 0.04720954571119074
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8194962374306126,
+            "AUC_lexical": 0.667709585401839,
+            "gap": 0.15178665202877362
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8369249136559347,
+            "AUC_lexical": 0.7251350388839175,
+            "gap": 0.11178987477201718
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9433267831519276,
+            "AUC_lexical": 0.7924915685858926,
+            "gap": 0.150835214566035
+          },
+          "topic": {
+            "AUC_embedding": 0.874266682606152,
+            "AUC_lexical": 0.7622904501499332,
+            "gap": 0.1119762324562188
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8601494913519036,
+            "AUC_lexical": 0.667709585401839,
+            "gap": 0.19243990595006455
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8717000936575237,
+            "AUC_lexical": 0.7251350388839175,
+            "gap": 0.14656505477360615
+          }
+        }
+      }
+    },
+    "aeb_Arab": {
+      "name": "Tunisian",
+      "n_empty": 0,
+      "n_neg": {
+        "random": 2014102,
+        "topic": 35410,
+        "lexical_topk": 61309,
+        "lexical_topk_en": 64767
+      },
+      "lexical": {
+        "random": 0.8282887268143622,
+        "topic": 0.7923582872907438,
+        "lexical_topk": 0.707210576108466,
+        "lexical_topk_en": 0.7617598963023965
+      },
+      "arms": {
+        "none": {
+          "random": {
+            "AUC_embedding": 0.9495054780805977,
+            "AUC_lexical": 0.8282887268143622,
+            "gap": 0.12121675126623555
+          },
+          "topic": {
+            "AUC_embedding": 0.8874460285751852,
+            "AUC_lexical": 0.7923582872907438,
+            "gap": 0.09508774128444142
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8657793381016294,
+            "AUC_lexical": 0.707210576108466,
+            "gap": 0.1585687619931634
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8786016355055718,
+            "AUC_lexical": 0.7617598963023965,
+            "gap": 0.11684173920317531
+          }
+        },
+        "topic": {
+          "random": {
+            "AUC_embedding": 0.9390890392510439,
+            "AUC_lexical": 0.8282887268143622,
+            "gap": 0.11080031243668176
+          },
+          "topic": {
+            "AUC_embedding": 0.8297925922589158,
+            "AUC_lexical": 0.7923582872907438,
+            "gap": 0.037434304968172016
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8328444312668148,
+            "AUC_lexical": 0.707210576108466,
+            "gap": 0.1256338551583488
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8493810448778853,
+            "AUC_lexical": 0.7617598963023965,
+            "gap": 0.08762114857548886
+          }
+        },
+        "scene": {
+          "random": {
+            "AUC_embedding": 0.9573345071914292,
+            "AUC_lexical": 0.8282887268143622,
+            "gap": 0.12904578037706704
+          },
+          "topic": {
+            "AUC_embedding": 0.8968246061763195,
+            "AUC_lexical": 0.7923582872907438,
+            "gap": 0.10446631888557578
+          },
+          "lexical_topk": {
+            "AUC_embedding": 0.8805683837867435,
+            "AUC_lexical": 0.707210576108466,
+            "gap": 0.17335780767827746
+          },
+          "lexical_topk_en": {
+            "AUC_embedding": 0.8900978605191328,
+            "AUC_lexical": 0.7617598963023965,
+            "gap": 0.12833796421673627
+          }
+        }
+      }
+    }
+  }
+}
